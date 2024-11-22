@@ -6,5 +6,7 @@
 
   "item.chocobos.chocobo_egg": "Chocobo Egg",
   "item.chocobos.chocobo": "Cooked Chocobo",
-  "item.chocobos.cooked_chocobo": "Chocobo"
+  "item.chocobos.cooked_chocobo": "Chocobo",
+
+  "block.chocobos.chocobo_nest": "Chocobo Nest"
 }
