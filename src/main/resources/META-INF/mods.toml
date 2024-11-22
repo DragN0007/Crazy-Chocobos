@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="47,)"
+license="All Rights Reserved"
+#issueTrackerURL="https://discord.gg/2WznNTtVac"
+[[mods]]
+modId="chocobos"
+version="${1.0}"
+displayName="Crazy Chocobos!"
+logoFile="cc_logo.png"
+authors="DragN0007, FrostedWyvern (Animator)"
+description='''
+Crazy Chocobos adds the Chocobo, a mount from the game series 'Final Fantasy' made by Square Enix.
+'''
+[[dependencies.chocobos]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.chocobos]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1]"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.chocobos]]
+modId="geckolib"
+mandatory=true
+versionRange = "[4.4.4,)"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "chocobos:chocobo"
+    },
+    "title": "I'm so hungry, I could eat a... Ch- Chocobo?!",
+    "description": "Obtain Chocobo Meat.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["chocobos:chocobo"]
+          }
+        ]
+      }
+    }
+  }
+}
