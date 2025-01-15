@@ -1,15 +1,14 @@
 package com.dragn0007.chocobos.gui;
 
 import com.dragn0007.chocobos.entities.AbstractChocobo;
+import com.dragn0007.chocobos.items.ChocoboArmorItem;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.item.HorseArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
@@ -43,9 +42,7 @@ public class ChocoboMenu extends AbstractContainerMenu {
         this.addSlot(new Slot(this.container, oHorseSlots++, 8, 36) {
             @Override
             public boolean mayPlace(ItemStack itemStack) {
-                if (itemStack.getItem() instanceof HorseArmorItem) {
-                    return !this.hasItem() && ChocoboMenu.this.chocobo.canWearArmor();
-                } else if (itemStack.is(ItemTags.WOOL_CARPETS)) {
+                if (itemStack.getItem() instanceof ChocoboArmorItem) {
                     return !this.hasItem() && ChocoboMenu.this.chocobo.canWearArmor();
                 }
                 return false;

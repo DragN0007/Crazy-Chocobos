@@ -1,5 +1,10 @@
-// 1.20.1	2024-11-22T01:33:23.3083531	Item Models: chocobos
+// 1.20.1	2025-01-15T00:55:36.9428522	Item Models: chocobos
 0f653d7c426b84f0cdd9f775f8809b5cf0b8fa78 assets/chocobos/models/item/chocobo.json
 2a0231792194a5472d55e0385e7d7fd3b70d50c2 assets/chocobos/models/item/chocobo_egg.json
 95aae1280e8b69d989b4c38041a98fbae3e78dee assets/chocobos/models/item/chocobo_icon.json
 ebde68d17df82c66aab0a8030566ffac440d1096 assets/chocobos/models/item/cooked_chocobo.json
+3c0ea52868f7aaad5d26ef921fe6d0831f01326a assets/chocobos/models/item/diamond_chocobo_armor.json
+d686aa966acb46e9a00908c79e753507d5a3f11f assets/chocobos/models/item/gold_chocobo_armor.json
+04627c2830b96c41fb1f20a70e48e5c2cf3a59e7 assets/chocobos/models/item/iron_chocobo_armor.json
+0f786df15e41fd7baf348656f54b73c39113750d assets/chocobos/models/item/leather_chocobo_armor.json
+fc272f0257eb3c34b9bc111c5ef6ef563c6b2632 assets/chocobos/models/item/netherite_chocobo_armor.json

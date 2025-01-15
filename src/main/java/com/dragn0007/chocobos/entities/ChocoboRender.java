@@ -12,6 +12,7 @@ public class ChocoboRender extends GeoEntityRenderer<Chocobo> {
     public ChocoboRender(EntityRendererProvider.Context renderManager) {
         super(renderManager, new ChocoboModel());
         this.addRenderLayer(new ChocoboMarkingLayer(this));
+        this.addRenderLayer(new ChocoboArmorLayer(this));
     }
 
     @Override
@@ -32,6 +33,12 @@ public class ChocoboRender extends GeoEntityRenderer<Chocobo> {
                 model.getBone("saddle").ifPresent(b -> b.setHidden(true));
                 model.getBone("saddle2").ifPresent(b -> b.setHidden(true));
                 model.getBone("saddle3").ifPresent(b -> b.setHidden(true));
+            }
+
+            if (entity.isWearingArmor()) {
+                model.getBone("armor").ifPresent(b -> b.setHidden(false));
+            } else {
+                model.getBone("armor").ifPresent(b -> b.setHidden(true));
             }
         }
 

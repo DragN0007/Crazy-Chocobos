@@ -21,6 +21,12 @@ public class CCItemModelProvider extends ItemModelProvider {
         simpleItem(CCItems.CHOCOBO);
         simpleItem(CCItems.COOKED_CHOCOBO);
         simpleItem(CCItems.CHOCOBO_EGG);
+
+        simpleItem(CCItems.LEATHER_CHOCOBO_ARMOR);
+        simpleItem(CCItems.IRON_CHOCOBO_ARMOR);
+        simpleItem(CCItems.GOLD_CHOCOBO_ARMOR);
+        simpleItem(CCItems.DIAMOND_CHOCOBO_ARMOR);
+        simpleItem(CCItems.NETHERITE_CHOCOBO_ARMOR);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

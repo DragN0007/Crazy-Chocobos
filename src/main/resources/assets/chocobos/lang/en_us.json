@@ -1,5 +1,6 @@
 {
   "itemGroup.chocobos": "Crazy Chocobos",
+  "tooltip.chocobos.armor.tooltip": "For Destrier Chocobos.",
 
   "item.chocobos.chocobo_spawn_egg": "Chocobo Spawn Egg",
   "entity.chocobos.chocobo": "Chocobo",
@@ -7,6 +8,12 @@
   "item.chocobos.chocobo_egg": "Chocobo Egg",
   "item.chocobos.chocobo": "Cooked Chocobo",
   "item.chocobos.cooked_chocobo": "Chocobo",
+
+  "item.chocobos.leather_chocobo_armor": "Leather Chocobo Armor",
+  "item.chocobos.iron_chocobo_armor": "Iron Chocobo Armor",
+  "item.chocobos.gold_chocobo_armor": "Gold Chocobo Armor",
+  "item.chocobos.diamond_chocobo_armor": "Diamond Chocobo Armor",
+  "item.chocobos.netherite_chocobo_armor": "Netherite Chocobo Armor",
 
   "block.chocobos.chocobo_nest": "Chocobo Nest"
 }

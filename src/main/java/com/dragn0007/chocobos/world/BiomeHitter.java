@@ -20,7 +20,7 @@ public class BiomeHitter {
         var biomes = context.lookup(Registries.BIOME);
 
          context.register(ADD_CHOCOBO_NEST, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                 biomes.getOrThrow(Tags.Biomes.IS_SPARSE),
+                 biomes.getOrThrow(Tags.Biomes.IS_HOT),
                  HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CHOCOBO_NEST_PLACED)),
                  GenerationStep.Decoration.SURFACE_STRUCTURES));
     }

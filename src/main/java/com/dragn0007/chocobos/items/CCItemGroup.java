@@ -23,6 +23,12 @@ public class CCItemGroup {
                         output.accept(CCItems.CHOCOBO.get());
                         output.accept(CCItems.COOKED_CHOCOBO.get());
                         output.accept(CCBlocks.CHOCOBO_NEST.get());
+
+                        output.accept(CCItems.LEATHER_CHOCOBO_ARMOR.get());
+                        output.accept(CCItems.IRON_CHOCOBO_ARMOR.get());
+                        output.accept(CCItems.GOLD_CHOCOBO_ARMOR.get());
+                        output.accept(CCItems.DIAMOND_CHOCOBO_ARMOR.get());
+                        output.accept(CCItems.NETHERITE_CHOCOBO_ARMOR.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

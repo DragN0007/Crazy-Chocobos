@@ -1,1 +1,9 @@
-// 1.20.1	2024-11-22T01:33:23.3093757	Recipes
+// 1.20.1	2025-01-15T00:55:36.943826	Recipes
+5e0f3595cf58ccbfa854e13d2b8679807ceb70ab data/chocobos/advancements/recipes/misc/diamond_chocobo_armor.json
+ad01d4bb6287be47c8b718940aaedecf89fb7289 data/chocobos/advancements/recipes/misc/gold_chocobo_armor.json
+7b289ea200ad35ec1a835fa2a340282c766410bc data/chocobos/advancements/recipes/misc/iron_chocobo_armor.json
+2084d3ee0970495462beabfa76582e7d94a449b2 data/chocobos/advancements/recipes/misc/leather_chocobo_armor.json
+bc0dea145a9eedcabf8ebfd36522166af34badf6 data/chocobos/recipes/diamond_chocobo_armor.json
+bc352737d8ba601a4bb81b84470deda45df63998 data/chocobos/recipes/gold_chocobo_armor.json
+3ca49094aa0b9b871f8f51d22d11f122a8ea87a2 data/chocobos/recipes/iron_chocobo_armor.json
+c68b358f355f7eb28a5dab8db57f321f2626f3b4 data/chocobos/recipes/leather_chocobo_armor.json

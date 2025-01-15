@@ -22,6 +22,17 @@ public class CCItems {
     public static final RegistryObject<Item> CHOCOBO_EGG = ITEMS.register("chocobo_egg",
             () -> new ChocoboEggItem((new Item.Properties()).stacksTo(1)));
 
+    public static final RegistryObject<Item> NETHERITE_CHOCOBO_ARMOR = ITEMS.register("netherite_chocobo_armor",
+            () -> new ChocoboArmorItem(15, (new Item.Properties()).stacksTo(1)));
+    public static final RegistryObject<Item> DIAMOND_CHOCOBO_ARMOR = ITEMS.register("diamond_chocobo_armor",
+            () -> new ChocoboArmorItem(11, (new Item.Properties()).stacksTo(1)));
+    public static final RegistryObject<Item> GOLD_CHOCOBO_ARMOR = ITEMS.register("gold_chocobo_armor",
+            () -> new ChocoboArmorItem(7, (new Item.Properties()).stacksTo(1)));
+    public static final RegistryObject<Item> IRON_CHOCOBO_ARMOR = ITEMS.register("iron_chocobo_armor",
+            () -> new ChocoboArmorItem(5, (new Item.Properties()).stacksTo(1)));
+    public static final RegistryObject<Item> LEATHER_CHOCOBO_ARMOR = ITEMS.register("leather_chocobo_armor",
+            () -> new ChocoboArmorItem(3, (new Item.Properties()).stacksTo(1)));
+
 
     //Food/ Items
     public static final RegistryObject<Item> CHOCOBO = ITEMS.register("chocobo",

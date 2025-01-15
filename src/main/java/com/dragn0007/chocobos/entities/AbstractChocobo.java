@@ -1,6 +1,7 @@
 package com.dragn0007.chocobos.entities;
 
 import com.dragn0007.chocobos.gui.ChocoboMenu;
+import com.dragn0007.chocobos.items.ChocoboArmorItem;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -9,7 +10,6 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Container;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -22,7 +22,10 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.horse.AbstractChestedHorse;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.SaddleItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -98,7 +101,7 @@ public abstract class AbstractChocobo extends AbstractChestedHorse {
 
     @Override
     public boolean isArmor(ItemStack itemStack) {
-        return itemStack.getItem() instanceof HorseArmorItem || itemStack.is(ItemTags.WOOL_CARPETS);
+        return itemStack.getItem() instanceof ChocoboArmorItem;
     }
 
     @Override
@@ -172,12 +175,6 @@ public abstract class AbstractChocobo extends AbstractChestedHorse {
             this.doPlayerRide(player);
             return InteractionResult.sidedSuccess(this.level().isClientSide);
         }
-    }
-
-    //TODO
-    @Override
-    public boolean canWearArmor() {
-        return false;
     }
 
     private static final EntityDataAccessor<Boolean> DATA_ID_CHEST = SynchedEntityData.defineId(AbstractChocobo.class, EntityDataSerializers.BOOLEAN);
@@ -265,11 +262,11 @@ public abstract class AbstractChocobo extends AbstractChestedHorse {
         if (!this.level().isClientSide) {
             this.getAttribute(Attributes.ARMOR).removeModifier(ARMOR_MODIFIER_UUID);
 
-            if (itemStack.getItem() instanceof HorseArmorItem horseArmorItem) {
-                int protection = horseArmorItem.getProtection();
+            if (itemStack.getItem() instanceof ChocoboArmorItem ChocoboArmorItem) {
+                int protection = ChocoboArmorItem.getProtection();
                 if (protection > 0) {
                     this.getAttribute(Attributes.ARMOR).addTransientModifier(
-                            new AttributeModifier(ARMOR_MODIFIER_UUID, "Horse armor bonus", (double) protection, AttributeModifier.Operation.ADDITION)
+                            new AttributeModifier(ARMOR_MODIFIER_UUID, "Chocobo armor bonus", (double) protection, AttributeModifier.Operation.ADDITION)
                     );
                 }
             }
