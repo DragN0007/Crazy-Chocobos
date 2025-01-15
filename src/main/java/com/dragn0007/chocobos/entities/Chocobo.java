@@ -358,10 +358,7 @@ public class Chocobo extends AbstractChocobo implements GeoEntity {
 		Random random = new Random();
 		this.setVariant(random.nextInt(ChocoboModel.Variant.values().length));
 		this.setOverlayVariant(random.nextInt(ChocoboMarkingLayer.Overlay.values().length));
-
-		if (spawnType == MobSpawnType.SPAWN_EGG) {
-			this.setBreed(random.nextInt(BreedModel.values().length));
-		}
+		this.setBreed(random.nextInt(BreedModel.values().length));
 
 		this.randomizeAttributes();
 		return super.finalizeSpawn(serverLevelAccessor, instance, spawnType, data, tag);
