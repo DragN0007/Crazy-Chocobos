@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:leather"
+    },
+    "B": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BAB",
+    "B B"
+  ],
+  "result": {
+    "item": "chocobos:iron_chocobo_armor"
+  },
+  "show_notification": true
+}

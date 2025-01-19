@@ -1,8 +1,14 @@
-// 1.20.1	2025-01-15T00:55:36.943826	Recipes
+// 1.20.1	2025-01-19T03:19:08.9193276	Recipes
+1248a66e8043cbd2f2ee9425a77b7e1ececb4ce3 data/chocobos/advancements/recipes/misc/cooked_chocobo_campfire_cooking.json
+4bbc8011750bd5dd442e733853cbf975835864b1 data/chocobos/advancements/recipes/misc/cooked_chocobo_smelting.json
+1461c42b3d0c27950d05b20e3aef6b48e00ea921 data/chocobos/advancements/recipes/misc/cooked_chocobo_smoking.json
 5e0f3595cf58ccbfa854e13d2b8679807ceb70ab data/chocobos/advancements/recipes/misc/diamond_chocobo_armor.json
 ad01d4bb6287be47c8b718940aaedecf89fb7289 data/chocobos/advancements/recipes/misc/gold_chocobo_armor.json
 7b289ea200ad35ec1a835fa2a340282c766410bc data/chocobos/advancements/recipes/misc/iron_chocobo_armor.json
 2084d3ee0970495462beabfa76582e7d94a449b2 data/chocobos/advancements/recipes/misc/leather_chocobo_armor.json
+3d773dfa2dae8498ba779d079a5aaf44bf4aef1d data/chocobos/recipes/cooked_chocobo_campfire_cooking.json
+e4331ca74c361b79f12e510359a49037d53a5f10 data/chocobos/recipes/cooked_chocobo_smelting.json
+98151888c9def39890f0b1baf8b8152475f14ceb data/chocobos/recipes/cooked_chocobo_smoking.json
 bc0dea145a9eedcabf8ebfd36522166af34badf6 data/chocobos/recipes/diamond_chocobo_armor.json
 bc352737d8ba601a4bb81b84470deda45df63998 data/chocobos/recipes/gold_chocobo_armor.json
 3ca49094aa0b9b871f8f51d22d11f122a8ea87a2 data/chocobos/recipes/iron_chocobo_armor.json

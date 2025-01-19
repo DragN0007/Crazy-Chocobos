@@ -6,7 +6,7 @@ license="All Rights Reserved"
 modId="chocobos"
 version="${1.1}"
 displayName="Crazy Chocobos!"
-logoFile="cc_logo.png"
+logoFile="chocobo_icon.png"
 authors="DragN0007, FrostedWyvern (Animator)"
 description='''
 Crazy Chocobos adds the Chocobo, a mount from the game series 'Final Fantasy' made by Square Enix.

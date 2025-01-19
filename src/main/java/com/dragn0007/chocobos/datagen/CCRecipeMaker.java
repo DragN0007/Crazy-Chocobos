@@ -3,11 +3,10 @@ package com.dragn0007.chocobos.datagen;
 import com.dragn0007.chocobos.items.CCItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.function.Consumer;
@@ -59,5 +58,11 @@ public class CCRecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .of(Items.DIAMOND).build()))
                 .save(pFinishedRecipeConsumer);
 
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(CCItems.CHOCOBO.get()), RecipeCategory.MISC, CCItems.COOKED_CHOCOBO.get(), 0.35F, 100)
+                .unlockedBy("has_chocobo", has(CCItems.CHOCOBO.get())).save(pFinishedRecipeConsumer, new ResourceLocation("chocobos", "cooked_chocobo_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(CCItems.CHOCOBO.get()), RecipeCategory.MISC, CCItems.COOKED_CHOCOBO.get(), 0.35F, 200)
+                .unlockedBy("has_chocobo", has(CCItems.CHOCOBO.get())).save(pFinishedRecipeConsumer, new ResourceLocation("chocobos", "cooked_chocobo_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(CCItems.CHOCOBO.get()), RecipeCategory.MISC, CCItems.COOKED_CHOCOBO.get(), 0.35F, 600)
+                .unlockedBy("has_chocobo", has(CCItems.CHOCOBO.get())).save(pFinishedRecipeConsumer, new ResourceLocation("chocobos", "cooked_chocobo_campfire_cooking"));
     }
 }
