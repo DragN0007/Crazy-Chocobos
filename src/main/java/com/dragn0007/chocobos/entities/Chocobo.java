@@ -468,6 +468,10 @@ public class Chocobo extends AbstractChocobo implements GeoEntity {
 				((Chocobo) abstractChocobo).setHealth(chocobo.getHealth());
 			}
 
+		if (k == 0) {
+			((Chocobo) chocobo).randomizeAttributes();
+		}
+
 		this.setOffspringAttributes(ageableMob, abstractChocobo);
 		return abstractChocobo;
 	}

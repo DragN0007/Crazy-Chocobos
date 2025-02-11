@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-15T00:55:36.943826	Registries
-e39b67ea30bb9244773966297999e7914080f2dd data/chocobos/forge/biome_modifier/add_chocobo_nest.json
+// 1.20.1	2025-02-10T23:30:20.9802797	Registries
+428b7eda5e750f00b79c85174fed5837db32e032 data/chocobos/forge/biome_modifier/add_chocobo_nest.json
 d5e95150acacae00e0667d94000ab133b931d488 data/chocobos/worldgen/configured_feature/chocobo_nest.json
-c6e3e221d5308dad306fcea99f6148f436b05574 data/chocobos/worldgen/placed_feature/chocobo_nest_placed.json
+eb49dd95924342de21bdb9e223c93b0c4a637884 data/chocobos/worldgen/placed_feature/chocobo_nest_placed.json

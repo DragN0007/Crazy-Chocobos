@@ -20,7 +20,6 @@ public class ModConfigFeatures {
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
-
         register(context, CHOCOBO_NEST, Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(CCBlocks.CHOCOBO_NEST.get())));
         
     }

@@ -22,7 +22,7 @@ public class BiomeHitter {
          context.register(ADD_CHOCOBO_NEST, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                  biomes.getOrThrow(Tags.Biomes.IS_HOT),
                  HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CHOCOBO_NEST_PLACED)),
-                 GenerationStep.Decoration.SURFACE_STRUCTURES));
+                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {

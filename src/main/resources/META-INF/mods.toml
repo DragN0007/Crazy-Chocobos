@@ -4,7 +4,7 @@ license="All Rights Reserved"
 #issueTrackerURL="https://discord.gg/2WznNTtVac"
 [[mods]]
 modId="chocobos"
-version="${1.1}"
+version="${1.2}"
 displayName="Crazy Chocobos!"
 logoFile="chocobo_icon.png"
 authors="DragN0007, FrostedWyvern (Animator)"

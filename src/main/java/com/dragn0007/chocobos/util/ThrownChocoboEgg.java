@@ -1,7 +1,6 @@
 package com.dragn0007.chocobos.util;
 
-import com.dragn0007.chocobos.entities.Chocobo;
-import com.dragn0007.chocobos.entities.EntityTypes;
+import com.dragn0007.chocobos.entities.*;
 import com.dragn0007.chocobos.items.CCItems;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -56,10 +55,13 @@ public class ThrownChocoboEgg extends ThrowableItemProjectile {
             chocobo.setAge(-24000);
             chocobo.moveTo(this.getX(), this.getY(), this.getZ(), this.getYRot(), 0.0F);
 
-            int randomVariant = this.level().getRandom().nextInt(23);
+            int randomVariant = this.level().getRandom().nextInt(ChocoboModel.Variant.values().length);
             chocobo.setVariant(randomVariant);
-            int randomOverlayVariant = this.level().getRandom().nextInt(31);
+            int randomOverlayVariant = this.level().getRandom().nextInt(ChocoboMarkingLayer.Overlay.values().length);
             chocobo.setOverlayVariant(randomOverlayVariant);
+            int randomBreed = this.level().getRandom().nextInt(BreedModel.values().length);
+            chocobo.setBreed(randomBreed);
+            chocobo.randomizeAttributes();
 
             this.level().addFreshEntity(chocobo);
          }
